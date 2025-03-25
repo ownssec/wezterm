@@ -25,7 +25,15 @@ config.font_size = 10.0
 config.color_scheme = "Catch Me If You Can (terminal.sexy)"
 -- config.color_scheme = "City Streets (terminal.sexy)"
 
+-- remove padding
 config.enable_tab_bar = false
 
+-- Remove padding
+config.window_padding = {
+	left = 0,
+	right = 0,
+	top = 0,
+	bottom = 0,
+}
 -- and finally, return the configuration to wezterm
 return config
