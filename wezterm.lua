@@ -20,13 +20,23 @@ local config = wezterm.config_builder()
 -- }
 
 -- config.font = wezterm.font("MesloLGS Nerd Font Mono")
-config.font_size = 10.0
+config.font_size = 10.5
 -- config.color_scheme = "Clone Of Ubuntu (Gogh)"
 config.color_scheme = "Catch Me If You Can (terminal.sexy)"
 -- config.color_scheme = "City Streets (terminal.sexy)"
+--
+-- config.font = wezterm.font("Fira Code")
+-- You can specify some parameters to influence the font selection;
+-- for example, this selects a Bold, Italic font variant.
+config.font = wezterm.font("JetBrains Mono", { weight = "Regular" })
+-- config.font = wezterm.font("Inter Regular")
+config.dpi = 96.0
 
 -- remove padding
 config.enable_tab_bar = false
+
+-- fps
+config.max_fps = 240
 
 -- Remove padding
 config.window_padding = {
