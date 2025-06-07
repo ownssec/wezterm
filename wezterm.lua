@@ -20,7 +20,7 @@ local config = wezterm.config_builder()
 -- }
 
 -- config.font = wezterm.font("MesloLGS Nerd Font Mono")
-config.font_size = 10.5
+config.font_size = 10.8
 -- config.color_scheme = "Clone Of Ubuntu (Gogh)"
 config.color_scheme = "Catch Me If You Can (terminal.sexy)"
 -- config.color_scheme = "City Streets (terminal.sexy)"
