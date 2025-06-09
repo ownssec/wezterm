@@ -1,41 +1,17 @@
--- Pull in the wezterm API
 local wezterm = require("wezterm")
-
--- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- This is where you actually apply your config choices
-
--- my coolnight colorscheme
--- config.colors = {
--- 	foreground = "#CBE0F0",
--- 	background = "#011423",
--- 	cursor_bg = "#47FF9C",
--- 	cursor_border = "#47FF9C",
--- 	cursor_fg = "#011423",
--- 	selection_bg = "#033259",
--- 	selection_fg = "#CBE0F0",
--- 	ansi = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#0FC5ED", "#a277ff", "#24EAF7", "#24EAF7" },
--- 	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
--- }
-
--- config.font = wezterm.font("MesloLGS Nerd Font Mono")
+-- Appearance
+config.font = wezterm.font("JetBrains Mono Regular", { weight = "Regular", stretch = "Normal", style = Normal })
 config.font_size = 10.8
--- config.color_scheme = "Clone Of Ubuntu (Gogh)"
 config.color_scheme = "Catch Me If You Can (terminal.sexy)"
--- config.color_scheme = "City Streets (terminal.sexy)"
---
--- config.font = wezterm.font("Fira Code")
--- You can specify some parameters to influence the font selection;
--- for example, this selects a Bold, Italic font variant.
-config.font = wezterm.font("JetBrains Mono", { weight = "Regular" })
--- config.font = wezterm.font("Inter Regular")
 config.dpi = 96.0
 
--- remove padding
-config.enable_tab_bar = false
+-- Remove tab bar and window decorations
+config.enable_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
 
--- fps
+-- Max FPS
 config.max_fps = 240
 
 -- Remove padding
@@ -45,5 +21,5 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
--- and finally, return the configuration to wezterm
+
 return config
