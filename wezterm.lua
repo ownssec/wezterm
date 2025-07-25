@@ -20,5 +20,7 @@ config.enable_tab_bar = true
 config.hide_tab_bar_if_only_one_tab = true
 config.max_fps = 240
 config.window_padding = { left = 0, right = 0, top = 0, bottom = 0 }
+config.term = "wezterm", 
+config.window_decorations = "RESIZE", -- no title bar, but still resizable
 
 return config
