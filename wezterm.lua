@@ -6,13 +6,21 @@ config.font_rasterizer = "FreeType"
 config.font_shaper = "Harfbuzz"
 
 -- Font settings
-config.font = wezterm.font("JetBrains Mono", {
-	weight = "Regular",
-	stretch = "Normal",
-	style = "Normal",
+-- config.font = wezterm.font("JetBrains Mono", {
+-- 	weight = "Regular",
+-- 	stretch = "Regular",
+-- 	style = "Normal",
+-- })
+config.font = wezterm.font_with_fallback({
+  "FiraCode Nerd Font",
+  "JetBrainsMono Nerd Font",
+  "Monaspace Krypton",
 })
-config.font_size = 10.8
+
+config.font_size = 11
 config.dpi = 96.0
+config.line_height = 1.0      
+config.cell_width = 1.0  
 
 -- Appearance
 config.color_scheme = "Catch Me If You Can (terminal.sexy)"
