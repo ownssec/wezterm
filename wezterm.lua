@@ -32,3 +32,5 @@ config.term = "wezterm" -- TERM environment
 config.window_decorations = "RESIZE" -- border only, no title bar
 
 return config
+
+--  https://ownssec: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@github.com/ownssec/wezterm.git
